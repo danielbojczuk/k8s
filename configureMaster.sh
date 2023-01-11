@@ -42,7 +42,7 @@ kubectl create -f https://docs.projectcalico.org/manifests/tigera-operator.yaml
 
 curl -O -L https://docs.projectcalico.org/manifests/custom-resources.yaml
 
-sed -i 's/192.168.0.0\/16/cidr: 10.10.0.0\/24/g' custom-resources.yaml
+sed -i 's/cidr: 192.168.0.0\/16/cidr: 10.10.0.0\/24/g' custom-resources.yaml
 
 sed -i 's/encapsulation: VXLANCrossSubnet/encapsulation: None/g' custom-resources.yaml
 
