@@ -1,4 +1,5 @@
 !$/bin/bash
+set -e
 cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
 overlay
 br_netfilter

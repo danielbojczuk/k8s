@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 kubeadm config images pull
 
 cat <<EOF | sudo tee kubeadm-config-iptables-mode.yaml
